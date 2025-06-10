@@ -1,0 +1,34 @@
+
+# Python
+__pycache__/
+.venv
+
+# macOS
+.DS_Store
+
+# PyCharm
+idea/
+/.idea/
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/smartset.iml
+/.idea/vcs.xml
+
+# VS code
+.vscode/
+
+# logs
+*.log
+
+# Build artifacts
+*.egg
+*.egg-info
+dist/
+build/
+.eggs/
+MANIFEST
+
+# Test arena
+sandbox.py
