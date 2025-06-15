@@ -1,5 +1,5 @@
 
-from smartset import SmartSet
+from src.codevariety import SmartSet
 
 def test_union():
     a = SmartSet([1, 2, 3])

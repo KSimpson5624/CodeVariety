@@ -1,5 +1,5 @@
 
-from smartset import SmartSet
+from src.codevariety import SmartSet
 
 def test_sort():
     a = SmartSet([6, 3, 5, 4, 7, 1])

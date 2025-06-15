@@ -1,6 +1,6 @@
 import pytest
 
-from smartset import SmartSet
+from src.codevariety import SmartSet
 
 def test_check_numeric_invalid_number():
     a = SmartSet([1, 2, 3])
