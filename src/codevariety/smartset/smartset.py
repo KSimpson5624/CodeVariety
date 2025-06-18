@@ -90,8 +90,9 @@ class SmartSet:
         return self._data.pop()
 
     def add(self, item):
-        self._data.add(item)
-        self._invalidate()
+        if item not in self._data:
+            self._data.add(item)
+            self._invalidate()
         return self
 
     def remove(self, item):
@@ -181,8 +182,9 @@ class SmartSet:
         return self
 
     def _invalidate(self):
-        self._sorted_cache = None
-        self._is_sorted = False
+        if self._is_sorted:
+            self._sorted_cache = None
+            self._is_sorted = False
 
     def _coerce_set(self, other):
         if isinstance(other, SmartSet):
